@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app='RestaurantApp'>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Big Brewsky</title>
+  </head>
+  <body>
+    <h1>Micro Brewery</h1>
+
+	<div class="tabs">
+		<a ui-sref="tab1" ui-sref-active="activeTab">Home</a>
+		<a ui-sref="tab2" ui-sref-active="activeTab">Categories</a>
+		<a ui-sref="tab3" ui-sref-active="activeTab">Items</a>
+	</div>
+	
+	<ui-view></ui-view>
+	
+    <!-- Libraries -->
+    <script src="angular.js"></script>
+    <script src="angular-ui-router.js"></script>
+
+    <!-- Modules -->
+
+  </body>
+</html>
