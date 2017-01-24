@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app='RestaurantApp'>
+<html ng-app='MenuApp'>
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
@@ -9,9 +9,9 @@
     <h1>Micro Brewery</h1>
 
 	<div class="tabs">
-		<a ui-sref="tab1" ui-sref-active="activeTab">Home</a>
-		<a ui-sref="tab2" ui-sref-active="activeTab">Categories</a>
-		<a ui-sref="tab3" ui-sref-active="activeTab">Items</a>
+		<a ui-sref="home" ui-sref-active="activeTab">Home</a>
+		<a ui-sref="categories">Categories</a>
+		<a ui-sref="items">Items</a>
 	</div>
 	
 	<ui-view></ui-view>
@@ -21,6 +21,16 @@
     <script src="angular-ui-router.js"></script>
 
     <!-- Modules -->
+	<script src="src/restaurant/data.module.js"></script>
+	<script src="src/restaurant/menuapp.module.js"></script>
+
+	<script src="src/routes.js"></script>
+
+	<script src="src/restaurant/categories.component.js"></script>
+	<script src="src/restaurant/items.component.js"></script>
+	<script src="src/restaurant/categories.controller.js"></script>	
+	<script src="src/restaurant/items.controller.js"></script>	
+	<script src="src/restaurant/menudata.service.js"></script>
 
   </body>
 </html>
